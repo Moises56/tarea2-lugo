@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+body {
+    padding-top: 0rem;
+    font-family: 'Anton', sans-serif;
+}
+.starter-template {
+    padding: 3rem 1.5rem;
+    margin-left: 4%;
+    margin-top: -2%;
+}
+
+.nombre-inicial{
+    color: #440F71;
+}
+.nombre-inicial:hover{
+    color: goldenrod;
+}
+
+#nombreCategoria:hover{
+    color: aqua;
+}
+.saludo-inicial{
+    font-family: system-ui;
+    color: #5C3287;
+}
+
+.nav-style{
+    background-color: blueviolet;
+}
+
+.nom-lugo{
+    margin-left: 100%;
+    font-weight: bold;
+    color: #fff;
+}
+
+.select-nav{
+    width: 15%;
+    position: absolute;
+    margin-top: 1%;
+    border-radius: 2rem;
+    padding-left: 3%;
+    margin-left: -26%;
+}
+
+.btn-nav{
+    border-radius: 2rem;
+    margin-left: -90%;
+    width: 100%;
+    margin-top: 10%;
+    background-color: #440F71;
+    color: #fff;
+}
+
+.btn-nav:hover{
+    color: gold;
+}
+
+
+.bg-light {
+    background-color: #5C3287!important;
+}
+
+.navbar-light .navbar-brand {
+    color: rgb(255 255 255 / 90%);
+    font-size: 200%;
+    font-weight: bold;
+    margin-left: 10%;
+}
+
+.navbar-nav .nav-link {
+    padding-right: 0;
+    padding-left: 80px;
+    font-size: 100%;
+    font-weight: bold;
+}
+
+.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link {
+    color: rgb(255 255 255 / 90%);
+    font-size: larger;
+    font-weight: bolder;
+}
+
+.navbar-light .navbar-nav .nav-link.active:hover, .navbar-light .navbar-nav .show>.nav-link{
+    color: gold;
+}
+
+/** targeta de categorias */
+.targeta{
+    border-radius: 1.5rem;
+}
+
+.targeta:hover{
+    background-color: #440F71 !important;
+}
+
+.icono{
+    border-radius: 1.5rem;
+    background-color: #dad1d1;
+    padding: 5%;
+    margin: 5%;
+    width: 100px;
+    height: 100px;
+} 
+
+.categorias{
+    font-family: 'Anton', sans-serif;
+    color: #ffffff;
+    font-size: 130%;
+}
+.comercio{
+    font-family: "HelveticaNeue", Helvetica, Arial, sans-serif; 
+    color: #ffffff;
+    font-size: larger;
+}
+
+.faIco{
+    padding-top: 20%;
+    font-size: -webkit-xxx-large;
+    color: darkcyan;
+}
+
+.faIco:hover{
+    color: darkred;
+}
+
+
+/** modal order */
+.precio{
+    font-family: 'Anton', sans-serif;
+    color: #504c4c;
+    margin-left: 90%;
+}
+
+.modal-order{
+    background-color: #440F71;
+}
+
+.title-order{
+    font-family: 'Anton', sans-serif;
+    color: #ffffff;
+    font-size: 160%;
+}
+
+
+.nombre-order{
+    font-family: "HelveticaNeue", Helvetica, Arial, sans-serif; 
+    color: #440F71;
+    font-size: xx-large;
+}
+
+.nombre-Producto{
+    font-family: "HelveticaNeue", Helvetica, Arial, sans-serif; 
+    color: #440F71;
+    font-size: x-large;
+}
+
+.btn-cerrar{
+    border-radius: 1.5rem;
+    background-color: #440F71;
+    color: #ffffff;
+    width: 30%;
+}
+
+.btn-cerrar:hover{
+    background-color: gold;
+    color: #440F71;
+}
+
+.descripcion-order{
+    font-family: sans-serif;
+}
+
+
+
+
+
+
+
+/** System Grid */
+
+ @media (max-width: 990px){
+
+    .select-nav {
+        margin-left: 30%;
+        margin-top: -3%;
+        width: auto;
+    }
+    .btn-nav {
+        margin-left: 55%;
+        width: 21%;
+        margin-top: -3%;
+    }
+/*     
+    .btn-nav{
+        margin-left: -18%;
+        width: 12%;
+    } */
+}
+
+
+
+/** System Grid** telefonos*/
+
+@media (max-width: 576px){
+
+    .select-nav {
+        margin-left: 10%;
+        width: 40%;
+        padding-left: 5%;
+    }
+
+    .btn-nav {
+        margin-left: 55%;
+        width: 43%;
+        margin-top: -3%;
+    }
+
+    .navbar-nav .nav-link {
+        padding-right: 0;
+        padding-left: 80px;
+        font-size: 100%;
+        font-weight: bold;
+        margin-top: -13%;
+        margin-left: 16%;
+    }
+
+    .navbar-toggler-icon {
+        display: block;
+    }
+   
+} 
