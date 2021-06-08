@@ -34,7 +34,7 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Crear Categoria</a>
+                <a class="btn btn-newCat" aria-current="page" href="#" data-bs-toggle="modal" data-bs-target="#newCategoriaModal" type="button">Crear Categoria</a>
               </li>
               
             </ul>
@@ -74,11 +74,12 @@
                </div> -->
            </div>
        </div>
+
+    
         
         </main><!-- /.container -->
-              
 
-
+     
 
 <!-- * Modal Ordenes -->
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -108,6 +109,87 @@
   </div>
 </div>
 
+  <!-- * Modal Categorias -->
+  <div class="modal fade" id="categoriasModal" tabindex="-1" aria-labelledby="categoriasModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable modal-lg ">
+      <div class="modal-content">
+        <div class="modal-header modal-order" id="nomCate">
+          <!-- <h5 class="modal-title title-order" id="categoriasModalLabel">Restaruantes</h5> -->
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+
+         <div class="modal-body">
+          <div class="container pt-2" >
+              <div class="row" id="modalCategorias"></div>
+            </div>
+          </div>
+
+          <div class="modal-footer">
+            <button type="button" class="btn btn-cerrar" data-bs-dismiss="modal">Cerrar</button>
+            <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+          </div>
+        </div>
+    </div>
+  </div>
+
+
+  <!--* Procesar pedido -->
+<div class="modal fade" id="procesarModal" tabindex="-1" aria-labelledby="procesarModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content card-stilo">
+      <div class="modal-body">
+        <div class="container">
+          <div class="row" id="procesarPedido">
+           
+            <div class="col-6">
+              <h2 id="nPro" class="nombre-Producto"></h2>
+              <p id="desc"></p>
+              <input id="cant" class="form-control input-procesar" type="number"> Cantidad a Solicitar: 
+              <br><br><br>
+              <span id="prec"></span>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
+        <button type="button" data-bs-dismiss="modal" class="btn btn-procesar" onclick="procesarOrden()">Procesar Orden</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+ <!-- * Modal Nueva Categoria-->
+ <div class="modal fade" id="newCategoriaModal" tabindex="-1" aria-labelledby="newCategoriaModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content card-stilo">
+      <div class="modal-body">
+        <div class="container">
+          <div class="row" id="newCategoriaPedido">
+           
+            <div class="col-12">
+              <input id="name-new" type="text" class="form-control mt-2" placeholder="Nombre de Categoria">
+             <textarea id="desc-new" class="form-control mt-2" placeholder="Descripcion" cols="5" rows="2"></textarea>
+              Color: <input id="color-new" type="color" class="form-control" >  
+              <select id="list-new" class="form-control mt-2">
+                <!-- <option value="1">Icon1</option>
+                <option value="2">Icon2</option> -->
+              </select>
+              <input id="empre-new" class="form-control mt-2" type="text" name="" placeholder="Nombre de la Empresa">
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
+        <button type="button" data-bs-dismiss="modal" class="btn btn-procesar" onclick="newCategoria()">Crear Categoria</button>
+      </div>
+    </div>
+  </div>
+</div>
 
 
 

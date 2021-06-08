@@ -35,6 +35,7 @@ body {
     color: #fff;
 }
 
+
 .select-nav{
     width: 15%;
     position: absolute;
@@ -42,6 +43,12 @@ body {
     border-radius: 2rem;
     padding-left: 3%;
     margin-left: -26%;
+}
+
+.select-nav:hover{
+    cursor: pointer;
+    border: 3px solid gold;
+    color: darkgoldenrod;
 }
 
 .btn-nav{
@@ -55,6 +62,7 @@ body {
 
 .btn-nav:hover{
     color: gold;
+    border: 0.1px solid gold;
 }
 
 
@@ -133,8 +141,12 @@ body {
     margin-left: 90%;
 }
 
-.modal-order{
+
+.modal-order {
     background-color: #440F71;
+    padding-top: 0%;
+    margin-top: 0%;
+    padding-bottom: 1%;
 }
 
 .title-order{
@@ -166,14 +178,131 @@ body {
 .btn-cerrar:hover{
     background-color: gold;
     color: #440F71;
+    border: 00.1px solid #440F71;
 }
 
 .descripcion-order{
     font-family: sans-serif;
 }
 
+.modal-content {
+   
+    border-radius: 1.3rem;
+    width: 112%;
+}
 
+/** modal Categorias */
+.nomEmpresa{
+    font-family: 'Anton', sans-serif;
+    transform: translateY(-40px);
+    color: #fff;
+    margin-left: 5%;
+    font-size: 1.5rem;
+}
+.nomEmpresa:hover{
+    color: #5C3287;
+}
 
+.nombre-Producto{
+    font-family: sans-serif;
+    margin-top: -12%;
+}
+
+.nombre-Producto:hover{
+    color: goldenrod;
+}
+
+.descripcion-prod{
+    font-family: sans-serif;
+}
+
+.btn-pedir{
+    border-radius: 1.5rem;
+    background-color: #5C3287;
+    color: #fff;
+    font-size: xx-small;
+    /* margin-left: 46%; */
+    margin-left: 85%;
+    transform: translateY(-30px);
+}
+
+.btn-pedir:hover{
+    background-color: goldenrod;
+    color: #5C3287;
+}
+
+.precio2 {
+    margin-left: 78%;
+    color: #505050;
+}
+
+.nombre-Producto2{
+    margin-top: 10%;
+}
+.descripcion-Producto2{
+    font-family: sans-serif;
+    margin-top: -12%;
+
+}
+.precio3{
+    margin-left: 175%;
+    color: #505050;
+
+}
+
+.input-procesar{
+    margin-left: 24%;
+    position: absolute;
+    /* margin-top: 10%; */
+    width: 20%;
+}
+
+.btn-procesar{
+    border-radius: 1.5rem;
+    background-color: #5C3287;
+    color: #fff;
+    font-size: medium;
+    margin-left: 46%;
+    
+}
+
+.btn-procesar:hover{
+    background-color: goldenrod;
+    color: #5C3287;
+    border: 00.1px solid #440F71;
+}
+
+.btn-newCat{
+    color: rgb(255 255 255 / 90%);
+    font-size: larger;
+    font-weight: bolder;   
+}
+
+.btn-newCat:hover{
+    color: gold;
+    border: 0.1px solid gold;
+}
+
+#name-new{
+    font-family: sans-serif;
+    font-size: large;
+}
+#desc-new{
+    font-family: sans-serif;
+    font-size: large;
+}
+#color-new{
+    font-family: sans-serif;
+    font-size: large;
+}
+#list-new{
+    font-family: sans-serif;
+    font-size: large;
+}
+#empre-new{
+    font-family: sans-serif;
+    font-size: large;
+}
 
 
 
@@ -181,6 +310,14 @@ body {
 /** System Grid */
 
  @media (max-width: 990px){
+
+    .btn-newCat {
+        color: rgb(255 255 255 / 90%);
+        font-size: larger;
+        font-weight: bolder;
+        margin-left: 42%;
+        margin-top: -10%;
+    }
 
     .select-nav {
         margin-left: 30%;
@@ -191,6 +328,16 @@ body {
         margin-left: 55%;
         width: 21%;
         margin-top: -3%;
+    }
+
+    /** modal categorias  */
+    .btn-pedir {
+        border-radius: 1.5rem;
+        background-color: #5C3287;
+        color: #fff;
+        font-size: xx-small;
+        margin-left: 80%;
+        transform: translateY(-30px);
     }
 /*     
     .btn-nav{
@@ -204,6 +351,14 @@ body {
 /** System Grid** telefonos*/
 
 @media (max-width: 576px){
+
+    .btn-newCat {
+        color: rgb(255 255 255 / 90%);
+        font-size: small;
+        font-weight: bolder;
+        margin-left: 37%;
+        margin-top: -15%;
+    }
 
     .select-nav {
         margin-left: 10%;
@@ -229,5 +384,58 @@ body {
     .navbar-toggler-icon {
         display: block;
     }
+
+    .modal-content {
+        border-radius: 1.3rem;
+        width: 100%;
+    }
+
+    /* * modal categorias */
+    .nomEmpresa{
+        font-family: 'Anton', sans-serif;
+        transform: translateY(-40px);
+        color: #fff;
+        margin-left: 5%;
+        font-size: 1rem;
+    }
+
+    .nombre-Producto {
+        font-family: sans-serif;
+        margin-top: -57%;
+        font-size: small;
+    }
+    
+    .descripcion-prod{
+        font-family: sans-serif;
+        font-size: 50%;
+    }
+
+    .btn-pedir{
+        border-radius: 1.5rem;
+        background-color: #5C3287;
+        color: #fff;
+        font-size: xx-small;
+        margin-left: 22%;
+        transform: translateY(4px);
+    }
+
+    .precio2 {
+        margin-left: 44%;
+        color: #505050;
+    }
+
+    .nombre-Producto2 {
+        margin-top: 50%;
+    }
+    
+    .input-procesar{
+        margin-left: 40%;
+        position: absolute;
+        /* margin-top: 10%; */
+        width: 20%;
+    }
+
+
+    
    
 } 
